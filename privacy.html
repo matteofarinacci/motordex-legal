@@ -14,14 +14,23 @@
 </head>
 <body>
 <h1>MotorDex Privacy Policy</h1>
-<p class="meta">Effective: June 23, 2026</p>
+<p class="meta">Effective: June 26, 2026</p>
 
 <p>MotorDex is a game where you photograph real cars you spot and collect them as trading cards.
 This policy explains what we collect, why, who we share it with, and the choices and rights you
 have. We keep only what the game needs, we never sell your data, and you can delete everything
 yourself, in the app, at any time.</p>
 
+<h2>Who we are</h2>
+<p>MotorDex is operated by Matteo Farinacci, the data controller for the personal data described
+in this policy. You can reach us about privacy at
+<a href="mailto:matteo.farinacci@gmail.com">matteo.farinacci@gmail.com</a>.</p>
+
 <h2>What we collect</h2>
+<p>When you first open MotorDex we create an anonymous account with a random internal ID so you can
+play without signing up. Your catches and gameplay are stored under that ID. You can add an email or
+Sign in with Apple later to keep your data across devices, and you can delete everything at any time
+in Settings → Account → Delete Account.</p>
 <ul>
   <li><strong>Account</strong> — your email and chosen handle, or, as a guest, just an internal
       account ID. Sign in with Apple may give us a private-relay email.</li>
@@ -31,8 +40,11 @@ yourself, in the app, at any time.</p>
   <li><strong>Scan activity</strong> — we log each scan to enforce the daily limit and keep costs sane.</li>
   <li><strong>Purchases</strong> — we store only whether your account is Pro, never your card or
       payment details.</li>
-  <li><strong>Advertising ID</strong> — if ads are enabled and you allow tracking, Google AdMob may
-      access your device advertising identifier. Ads are off at launch.</li>
+  <li><strong>Advertising identifier</strong> — we do not currently collect it. Ads are off at launch
+      and our privacy manifest declares no tracking. If we ever turn ads on, they will be
+      non-personalized only (no advertising identifier is used). We would only introduce any cross-app
+      tracking after asking your permission through Apple's App Tracking Transparency, and you could
+      decline and still use every feature.</li>
 </ul>
 
 <h2>How we use your data</h2>
@@ -40,22 +52,53 @@ yourself, in the app, at any time.</p>
 catches on your map, sync across your devices, power the friends feed, enforce limits, and provide
 support. We do not sell your personal data.</p>
 
-<h2>Third parties who process your data</h2>
-<p>We share data with these providers only to operate the app's features, and rely on them to
-protect it:</p>
+<h2>Categories of personal information we collect (California)</h2>
+<p>For California residents, the categories of personal information we collect are:</p>
 <ul>
-  <li><strong>Supabase</strong> — accounts, game data, and photo storage (United States).</li>
-  <li><strong>Google Gemini</strong> — identifies the car in each scan; your photo is sent to Google
-      for identification and, under Google's paid Gemini API terms, is <em>not</em> used to train
-      Google's models.</li>
-  <li><strong>RevenueCat</strong> — manages your subscription entitlement.</li>
-  <li><strong>Apple</strong> — Sign in with Apple and App Store subscription billing.</li>
-  <li><strong>Apple MapKit</strong> — displays your catch map (map tiles only).</li>
-  <li><strong>Google AdMob</strong> — serves ads on the free tier (off at launch; when on,
-      non-personalized by default; see
-      <a href="https://policies.google.com/technologies/partner-sites">Google's policy</a>).</li>
+  <li><strong>Identifiers</strong> — your internal account ID, chosen handle, and email or Apple
+      private-relay email.</li>
+  <li><strong>Commercial information</strong> — your MotorDex Pro subscription status.</li>
+  <li><strong>Internet or other electronic network activity</strong> — scan logs we use to enforce
+      daily limits.</li>
+  <li><strong>Geolocation data</strong>, including precise geolocation, which we treat as Sensitive
+      Personal Information (see below).</li>
+  <li><strong>Visual information</strong> — the car photos you scan and the date and location embedded
+      in them.</li>
+  <li><strong>Inferences and content</strong> — the AI's best-guess car details.</li>
 </ul>
-<p>We do not use any push-notification service or third-party analytics SDK.</p>
+<p>Sources: directly from you and your device. Business purposes: operating and securing the game as
+described in How we use your data. We disclose these categories only to the service providers listed
+under Third parties. We have not sold or shared any category of personal information in the past 12
+months.</p>
+
+<h2>Sensitive personal information</h2>
+<p>When you allow location, we collect your precise geolocation. California (CPRA) treats this as
+Sensitive Personal Information, and Virginia, Colorado, Connecticut and other states treat it as
+sensitive data. We collect it only with your consent (the iOS location permission you grant) and use
+it for one purpose: to place your own catches on your own map. We do not use precise geolocation to
+infer characteristics about you, we do not disclose it to your friends or any third party, and we do
+not sell or share it. Because we limit our use to providing the map you asked for, the CPRA Right to
+Limit Use of Sensitive Personal Information does not change how we handle it — but you can withdraw
+consent at any time in iOS Settings, and for users under 16 precise-location capture is off.</p>
+
+<h2>Third parties who process your data</h2>
+<p>We share data only with the service providers we need to run MotorDex, who act as our processors
+under data processing agreements and may only use your data on our instructions:</p>
+<ul>
+  <li><strong>Supabase</strong> — backend, database, and photo storage — United States — EU Standard
+      Contractual Clauses.</li>
+  <li><strong>Google (Gemini API)</strong> — identifying the car in your photo — United States —
+      Standard Contractual Clauses.</li>
+  <li><strong>RevenueCat</strong> — subscription status — United States — Standard Contractual
+      Clauses.</li>
+  <li><strong>Apple</strong> — Sign in with Apple and App Store billing — Apple acts as an independent
+      controller for App Store purchases.</li>
+  <li><strong>Apple MapKit</strong> — map tiles — operated by Apple.</li>
+  <li><strong>Google AdMob</strong> — ads, which are off at launch — United States — Standard
+      Contractual Clauses.</li>
+</ul>
+<p>If we add or change a provider we will update this policy; you may object by contacting us or by
+deleting your account. We do not use any push-notification service or third-party analytics SDK.</p>
 
 <h2>Your photos</h2>
 <p>When you scan a car, the photo is sent through our server to Google Gemini to identify it, then
@@ -73,10 +116,35 @@ email below.</p>
 on your map; we also read location embedded in photos you upload. Deny or revoke it anytime in iOS
 Settings — the app still works, those catches just won't have a pin.</p>
 
+<h2>AI identification</h2>
+<p>When you scan a car, Google Gemini automatically suggests the make and model from your photo. This
+is an automated process, but it only produces an entertainment label for your Catch Card — it has no
+legal or similarly significant effect on you, so the special rules on solely-automated decisions in
+Article 22 GDPR do not apply. Identifications are best-effort and can be wrong; you can re-scan or
+delete any catch.</p>
+
+<h2>Legal bases (EEA and UK users)</h2>
+<p>We rely on:</p>
+<ul>
+  <li><strong>Performance of our contract with you</strong> (Art. 6(1)(b)) — creating and running your
+      account, identifying your scans, building your dex and Catch Cards, syncing your data, operating
+      the friends feed for friends you add, and processing Pro purchases.</li>
+  <li><strong>Our legitimate interests</strong> (Art. 6(1)(f)) — enforcing scan limits, preventing
+      abuse and fraud, keeping the service secure, and processing the incidental contents of photos you
+      choose to upload; we have weighed this against your interests and you may object at any time.</li>
+  <li><strong>Your consent</strong> (Art. 6(1)(a)) — precise location, which you grant through the iOS
+      permission prompt and can withdraw in iOS Settings, and any future ad tracking through App
+      Tracking Transparency.</li>
+  <li><strong>Legal obligation</strong> (Art. 6(1)(c)) — retaining limited records where the law
+      requires.</li>
+</ul>
+
 <h2>What others can see</h2>
 <p>Your handle, your dex and level, and the catches you make are visible to friends you add, and
 friends can react to your catches. Use the in-app Report and Block tools for anything inappropriate —
 reports are reviewed within 24 hours and violating content or accounts can be removed.</p>
+<p>Friends never see the precise GPS of your catches — only a count of how many you have pinned on
+your map. The exact coordinates of a catch are visible only to you.</p>
 
 <h2>Advertising &amp; tracking</h2>
 <p>We don't use cross-app tracking or third-party analytics SDKs, and our privacy manifest declares
@@ -85,29 +153,63 @@ through Apple's App Tracking Transparency before any tracking — you can declin
 feature.</p>
 
 <h2>Keeping &amp; deleting your data</h2>
-<p>We keep your data while your account exists. You can delete a single catch from its card, or
-remove everything at once: Settings → Account → Delete Account permanently deletes your account,
-catches, photos, friends, and reactions. This is immediate and can't be undone.</p>
+<p>We keep your account, catch, and gameplay data until you delete the individual catch or your
+account, after which it is removed from our live systems immediately and purged from encrypted backups
+within 30 days. Scan-activity logs used to enforce daily limits are kept for up to 30 days. Purchase
+records held by Apple and RevenueCat are kept under their own policies and as tax and accounting law
+requires. Settings → Account → Delete Account permanently deletes your account, catches, photos,
+friends, reactions, and the reports and blocks tied to your account. This is immediate and can't be
+undone.</p>
 
 <h2>Your privacy rights</h2>
-<p>Depending on where you live you may have rights to access, correct, delete, or restrict the use of
-your data and to object to certain processing (GDPR/UK GDPR), or to know, delete, and opt out of any
-"sale" or "sharing" of your data (CCPA/CPRA). We do not sell or share your personal information for
-cross-context behavioral advertising. To exercise a right, email us below — in-app Delete Account
-fulfils erasure instantly, and we respond to access and other requests within one month (GDPR) or
-45 days (CCPA).</p>
+<p>You can ask us to access, correct, delete, or restrict the use of your data, to object to certain
+processing, and to receive the personal data you gave us in a portable, machine-readable format (data
+portability). Where we rely on your consent — precise location, and any future ad tracking — you can
+withdraw it at any time without affecting earlier processing; turn location off in iOS Settings →
+Privacy → Location Services → MotorDex. You also have the right not to be treated differently for
+exercising these rights; we do not carry out profiling that has legal or similarly significant effects.
+To make a request you, or an authorized agent acting for you, can email us, and we will verify the
+request through your account. We honor a Global Privacy Control signal as an opt-out of sale or
+sharing. We respond free of charge: under the GDPR/UK GDPR within one month, extendable by up to two
+further months for complex requests (we'll tell you why); under the CCPA we confirm receipt within 10
+business days and respond within 45 days, extendable once by 45 days. If we deny a request, residents
+of Virginia, Colorado, Connecticut and similar states may appeal by replying to our decision; we will
+respond within 45 days (60 for Colorado and Connecticut) and, if we still deny it, tell you how to
+contact your state Attorney General. You also have the right to lodge a complaint with a data
+protection authority — in the UK the Information Commissioner's Office (ico.org.uk), in the EEA your
+local Data Protection Authority — though we'd appreciate the chance to resolve your concern first at
+<a href="mailto:matteo.farinacci@gmail.com">matteo.farinacci@gmail.com</a>.</p>
 
 <h2>International transfers &amp; security</h2>
-<p>Our providers (including Supabase, Google, and RevenueCat) process data in the United States. For
-users in the EEA, UK, and Switzerland we rely on the EU Standard Contractual Clauses (and the UK
-International Data Transfer Addendum) as the safeguard for these transfers. We use reputable providers,
-HTTPS in transit, and access controls — but no system is perfectly secure.</p>
+<p>For transfers of EEA, UK, or Swiss personal data to the United States we rely on the European
+Commission's Standard Contractual Clauses, completed for the UK by the ICO's UK Addendum to those
+Clauses (or the UK IDTA), together with supplementary measures such as encryption in transit and
+access controls. Where a provider is certified under the EU-US Data Privacy Framework we rely on that
+certification. Copies of the relevant safeguards are available on request. We protect your data with
+HTTPS encryption in transit, database row-level security so each user can reach only their own data,
+encryption at rest provided by our backend, and least-privilege access controls. Catch photos are
+stored at unlisted web addresses with long, random identifiers: they are not individually encrypted or
+access-controlled, so anyone who has a photo's link (for example a friend you share a card with) can
+open it — please keep this in mind before sharing. No system is perfectly secure.</p>
+
+<h2>Data breaches</h2>
+<p>If a personal data breach occurs that is likely to affect your rights, we will notify the relevant
+supervisory authority within 72 hours of becoming aware where the law requires, and we will tell
+affected users without undue delay where the breach is likely to result in a high risk to you.</p>
 
 <h2>Children</h2>
-<p>MotorDex is a general-audience app. We ask your birth year once at first launch: people under 13
-cannot create an account, and for users under 16 we turn off precise-location capture by default. We
-do not knowingly collect data from children under 13 — if you believe one has given us data, contact
-us and we'll delete it.</p>
+<p>MotorDex is a general-audience app intended for users 13 and older. It is not directed to children
+under 13, and we do not knowingly collect personal information from anyone under 13. You must be at
+least 13 to use MotorDex (see our Terms). We ask for your birth year once, and store it only on your
+device. People under 13 cannot create an account, and for users who tell us they are under 16 we turn
+precise-location capture off. If you are in the EEA or UK, the age at which you can consent to data
+processing without a parent varies by country (13 to 16); because we keep consent-based features such
+as precise location off for everyone under 16, we do not rely on a teenager's own consent for them. We
+do not sell or share personal information and we do not show personalized ads; if we ever enable
+advertising that could involve sharing personal information, we will not sell or share the data of any
+user we know to be under 16 without opt-in consent (from the user if 13-15, or a parent or guardian if
+under 13), as California law requires. If we learn we have collected data from a child under 13, we
+will delete it.</p>
 
 <h2>Changes &amp; contact</h2>
 <p>If this policy changes we'll update the date above and ask you to review it. Questions or requests:
