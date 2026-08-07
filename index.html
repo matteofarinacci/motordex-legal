@@ -105,6 +105,13 @@ h1{font-family:'J25';font-size:41px;line-height:.9;color:#fff;font-weight:400;ma
 .cta .t b{font-weight:400;display:block}
 .cta .t .s{display:block;font-size:10px;letter-spacing:1px;color:#6B7686;margin-top:6px}
 
+/* shown by JS only inside Meta's in-app browser */
+.iabhint{
+  display:none;
+  font-family:'Silk';font-size:9px;letter-spacing:1px;line-height:1.7;
+  color:#E0C273;margin:-6px 3px 16px;
+}
+
 /* secondary CTA: same white, but NO gold ring - the ring is what marks the
    one button we actually want tapped, so it stays exclusive to iOS */
 .cta2{
@@ -170,6 +177,8 @@ footer a:hover{color:#D63A2E}
       <span><b>GET MOTORDEX</b><span class="s">FREE ON THE APP STORE</span></span>
     </span>
   </a>
+
+  <p class="iabhint" id="iabhint">STUCK IN INSTAGRAM'S BROWSER?<br>TAP &#183;&#183;&#183; &#8594; OPEN IN BROWSER</p>
 
   <a class="cta2" href="mailto:support@motordexgame.com?subject=Android%20waitlist">
     <b>ANDROID WAITLIST</b>
@@ -239,6 +248,38 @@ footer a:hover{color:#D63A2E}
     setTimeout(pass, rand(3000, 7000));
   }
   setTimeout(pass, rand(1200, 2500));
+})();
+// App Store hand-off.
+// Meta's in-app browser refuses to launch native apps from an https:// link -
+// it loads the App Store's mobile WEB page inside the webview instead, which
+// is where Instagram traffic was getting stranded. itms-apps:// is handled by
+// iOS itself, above the webview, so it escapes. If the scheme doesn't fire we
+// fall straight back to the normal link, and every non-iOS browser is
+// untouched (the <a href> still does the work there).
+(function(){
+  var HTTPS  = 'https://apps.apple.com/us/app/motordex/id6779553740';
+  var NATIVE = HTTPS.replace(/^https:/, 'itms-apps:');
+  var ua = navigator.userAgent || '';
+  var cta = document.querySelector('.cta');
+
+  if (cta && /iPad|iPhone|iPod/.test(ua)) {
+    cta.addEventListener('click', function(e){
+      e.preventDefault();
+      var left = false;
+      function gone(){ left = true; }
+      document.addEventListener('visibilitychange', gone, {once:true});
+      window.location.href = NATIVE;
+      setTimeout(function(){
+        document.removeEventListener('visibilitychange', gone);
+        if (!left && !document.hidden) window.location.href = HTTPS;
+      }, 1200);
+    });
+  }
+
+  if (/Instagram|FBAN|FBAV|FB_IAB/.test(ua)) {
+    var hint = document.getElementById('iabhint');
+    if (hint) hint.style.display = 'block';
+  }
 })();
 </script>
 </body>
